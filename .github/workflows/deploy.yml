@@ -27,6 +27,6 @@ jobs:
                   folder: ./public
 
             - name: Deploy to Cloudflare Pages
-              uses: cloudflare/pages-action
+              uses: cloudflare/pages-action@main
               with:
                   CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
