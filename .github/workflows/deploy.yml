@@ -20,8 +20,7 @@ jobs:
                   hugo-version: "latest"
 
             - name: Build Web
-              run: npm install
-              run: npm publish
+              run: npm install && npm publish
 
             - name: Deploy Web
               uses: JamesIves/github-pages-deploy-action@v4
