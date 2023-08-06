@@ -10,10 +10,16 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v3
-              uses: actions/setup-node@v3
-              with:
-              run: npm install && npm publish
 
+            - name: Build
+              uses: actions/setup-node@v3
+
+            - name: Install Dependencies
+              run: npm install
+            
+            - name: Build
+              run: npm run build
+              
             - name: Deploy Web
               uses: JamesIves/github-pages-deploy-action@v4
               with:
