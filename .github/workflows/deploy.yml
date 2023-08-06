@@ -29,4 +29,8 @@ jobs:
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/pages-action@main
               with:
+                  accountId: ${{ secrets.CF_ACCOUNT_ID }}
                   apiToken: ${{ secrets.CF_API_TOKEN }}
+                  branch: gh-pages
+                  projectName: mars-run
+                  directory: /
