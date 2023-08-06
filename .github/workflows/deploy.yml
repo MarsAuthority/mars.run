@@ -25,3 +25,8 @@ jobs:
               with:
                   branch: gh-pages
                   folder: ./public
+
+             - name: Deploy to Cloudflare Pages
+                uses: cloudflare/github-pages-deploy-action@main
+                with:
+                  CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
