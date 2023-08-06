@@ -16,9 +16,8 @@ jobs:
 
             - name: Setup Npm
               uses: actions/setup-node@v3
-              registry-url: "https://registry.npmjs.org"
               with:
-                  hugo-version: "latest"
+                registry-url: "https://registry.npmjs.org"
 
             - name: Build Web
               run: npm install && npm publish
