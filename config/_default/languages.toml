@@ -2,7 +2,7 @@
   languageName = "中文"
   contentDir = "content/zh"
   weight = 10
-  [en.params]
+  [zh.params]
     languageISO = "ZH"
     languageTag = "zh-CN"
 
